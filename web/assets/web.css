@@ -1,0 +1,46 @@
+p            { @apply .mb-2; }
+
+#container  { @apply .mx-auto .max-w-xl; }
+
+#title     { @apply .border-b .text-gray-800 .text-5xl .font-bold
+                    .leading-tight .mt-4 .text-center }
+#desc      { @apply .mb-4 .text-center }
+
+#sbox       { @apply .flex .justify-between .items-center .flex-wrap
+                     .flex-no-wrap .bg-gray-300 .mb-8 .rounded .py-3 .px-3}
+
+#sform      { @apply flex-grow flex justify-end .flex-row .m-0 }
+#qinput     { @apply .px-4 .py-2 .rounded-sm .mr-2 .flex-grow .border-0}
+
+#sbutton    { @apply .px-4 .py-2 .rounded-sm .bg-red-500 .text-white
+                     .border-0; }
+
+#sbutton:hover {
+            @apply .bg-white
+}
+
+h1          { @apply text-2xl .font-bold .mb-4 .text-center; }
+h2          { @apply text-xl .font-bold .mb-4; }
+h3          { @apply text-lg .mb-4; }
+a           { text-decoration: underline; color: inherit; }
+
+.joblist       { @apply .mb-2 }
+.joblist .job  { @apply .py-2 .flex .flex-row .flex-no-wrap .w-full
+                        .border-0 .border-b .border-solid .border-gray-300	}
+
+.joblist .job .left .title { @apply .mt-0 .mb-2 }
+.joblist .job .left .info { @apply .text-sm .m-0 .text-gray-600 }
+
+.joblist .job .left, .joblist .job .right { @apply .flex-col .py-2 }
+.joblist .job .left { @apply .flex-grow }
+
+.joblist .job .right .tag {
+    @apply .border .border-solid .text-gray-700 .border-gray-400 .px-2 .py-0
+           .mr-1 .rounded .self-center .whitespace-no-wrap .my-1;
+    text-decoration: none;
+}
+
+#pagination { }
+.page { @apply .mr-2 .text-gray-600 }
+.page.active { @apply .text-gray-900 }
+

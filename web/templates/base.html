@@ -1,0 +1,16 @@
+<html>
+<head>
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='web.css') }}">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <div id="title"><a href="/">{{ SITE_TITLE }}</a></div>
+            <div id="desc">{{ SITE_DESC }}</div>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>
+

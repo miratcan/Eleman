@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h2>Description:</h2>
+    {{ description|markdown }}
+    <h2>Location:</h2>
+    <p>{{ location }}</p>
+    {% if requirements is not none %}
+        <h2>Requirements:</h2>
+        {{ requirements|markdown }}
+    {% endif %}
+    {% if responsibilities is not none %}
+        <h2>Responsibilities:</h2>
+        {{ responsibilities|markdown }}
+    {% endif %}
+    {% if salary_range is not none %}
+        <h2>Salary Range:</h2>
+        {{ salary_range|markdown }}
+    {% endif %}
+    {% if hiring_process is not none %}
+        <h2>Hiring Process:</h2>
+        {{ hiring_process|markdown }}
+    {% endif %}
+{% endblock %}
+

@@ -1,0 +1,91 @@
+p            { margin-bottom: 0.5rem;
+}
+
+#container  { margin-left: auto; margin-right: auto; max-width: 36rem;
+}
+
+#title     { border-bottom-width: 1px; --text-opacity: 1; color: #2d3748; color: rgba(45, 55, 72, var(--text-opacity)); font-size: 3rem; font-weight: 700; line-height: 1.25; margin-top: 1rem; text-align: center
+}
+
+#desc      { margin-bottom: 1rem; text-align: center
+}
+
+#sbox       { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; flex-wrap: nowrap; --bg-opacity: 1; background-color: #e2e8f0; background-color: rgba(226, 232, 240, var(--bg-opacity)); margin-bottom: 2rem; border-radius: 0.25rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 0.75rem; padding-right: 0.75rem
+}
+
+#sform      { flex-grow: 1; display: flex; justify-content: flex-end; flex-direction: row; margin: 0
+}
+
+#qinput     { padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; border-radius: 0.125rem; margin-right: 0.5rem; flex-grow: 1; border-width: 0
+}
+
+#sbutton    { padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; border-radius: 0.125rem; --bg-opacity: 1; background-color: #f56565; background-color: rgba(245, 101, 101, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity)); border-width: 0;
+}
+
+#sbutton:hover {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity))
+}
+
+h1          { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; text-align: center;
+}
+
+h2          { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;
+}
+
+h3          { font-size: 1.125rem; margin-bottom: 1rem;
+}
+
+a           { text-decoration: underline; color: inherit;
+}
+
+.joblist       { margin-bottom: 0.5rem
+}
+
+.joblist .job  { padding-top: 0.5rem; padding-bottom: 0.5rem; display: flex; flex-direction: row; flex-wrap: nowrap; width: 100%; border-width: 0; border-bottom-width: 1px; border-style: solid; --border-opacity: 1; border-color: #e2e8f0; border-color: rgba(226, 232, 240, var(--border-opacity))
+}
+
+.joblist .job .left .title { margin-top: 0; margin-bottom: 0.5rem
+}
+
+.joblist .job .left .info { font-size: 0.875rem; margin: 0; --text-opacity: 1; color: #718096; color: rgba(113, 128, 150, var(--text-opacity))
+}
+
+.joblist .job .left, .joblist .job .right { flex-direction: column; padding-top: 0.5rem; padding-bottom: 0.5rem
+}
+
+.joblist .job .left { flex-grow: 1
+}
+
+.joblist .job .right .tag {
+  border-width: 1px;
+  border-style: solid;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #cbd5e0;
+  border-color: rgba(203, 213, 224, var(--border-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0.25rem;
+  border-radius: 0.25rem;
+  align-self: center;
+  white-space: nowrap;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+#pagination {
+}
+
+.page { margin-right: 0.5rem; --text-opacity: 1; color: #718096; color: rgba(113, 128, 150, var(--text-opacity))
+}
+
+.page.active { --text-opacity: 1; color: #1a202c; color: rgba(26, 32, 44, var(--text-opacity))
+}
+

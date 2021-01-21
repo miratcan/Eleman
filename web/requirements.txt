@@ -1,0 +1,4 @@
+airtable-python-wrapper==0.15.1
+Flask==1.1.2
+flask-misaka==1.0.0
+flask-cors==3.0.10
