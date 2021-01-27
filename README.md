@@ -3,7 +3,7 @@
   Fully dockerised job board app that uses airtable as database.
 </p>
 
-![<img src="https://img.youtube.com/vi/3lXs0bKfdMw/maxresdefault.jpg" width="50%">](https://youtu.be/3lXs0bKfdMw)
+![https://img.youtube.com/vi/3lXs0bKfdMw/maxresdefault.jpg](https://youtu.be/3lXs0bKfdMw)
 
 # Features
 
