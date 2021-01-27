@@ -261,7 +261,7 @@ def set_company_records_on_db(airtable_base_key, airtable_api_key, db, cr):
     airtable_keys_to_delete = \
         set(airtable_keys_on_table) - set(airtable_keys_on_airtable)
     for airtable_key in airtable_keys_to_delete:
-        delete_by_field('companies', 'airtable_key', airtable_key)
+        delete_by_field('companies', 'airtable_key', airtable_key, db, cr)
         logging.info('deleted company: ' + company_record['id'])
 
 
