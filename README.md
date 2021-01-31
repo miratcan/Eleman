@@ -20,17 +20,9 @@ You can check our [youtube video](https://youtu.be/3lXs0bKfdMw) to understand wh
 
 # How to Use?
 
-If your need a simple job board there's a X steps to run.
+Check the document: [Eleman Docker Container Tutorial: How To Set Up & Configure](https://github.com/miratcan/eleman/wiki/Eleman-Docker-Container-Tutorial:-How-To-Set-Up-&-Configure)
 
-1. Clone [this](https://airtable.com/invite/l?inviteId=invTx1QDnX5EZ5QVk&inviteToken=414fc3ad1a3f8e069570a78d111011743e85b98ff701da04694337c35e68e375) airtable base on your workspace.
-2. Get your airtable api key and copied base id. ([1](https://support.airtable.com/hc/en-us/articles/360056249614-Creating-a-read-only-API-key), [2](https://airtable.com/api)).
-4. Create your config file by  [config file](settings.env.example) on your local as settings.env
-   and change it for your needs. 
-5. Run docker command:
-  
-      docker run -p 80:80 --env-file .settings.env miratcan/eleman
-
- # How to Contribute?
+# How to Contribute?
  
  I appreciate all kinds of help for this project. Please check issues section
  and 
