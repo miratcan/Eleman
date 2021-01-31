@@ -39,12 +39,12 @@ def compile_css():
 
 @app.cli.command("synch")
 def synch():
-    AIRTABLE_BASE_KEY = app.config['AIRTABLE_BASE_KEY']
+    AIRTABLE_BASE_ID = app.config['AIRTABLE_BASE_ID']
     AIRTABLE_API_KEY = app.config['AIRTABLE_API_KEY']
-    if AIRTABLE_BASE_KEY is None or AIRTABLE_API_KEY is None:
-        raise Exception("AIRTABLE_API_KEY and AIRTABLE_BASE_KEY environment "
+    if AIRTABLE_BASE_ID is None or AIRTABLE_API_KEY is None:
+        raise Exception("AIRTABLE_API_KEY and AIRTABLE_BASE_ID environment "
                         "variables must be set to run this command.")
-    synch_db_from_airtable(AIRTABLE_BASE_KEY, AIRTABLE_API_KEY, db, cr)
+    synch_db_from_airtable(AIRTABLE_BASE_ID, AIRTABLE_API_KEY, db, cr)
 
 
 @app.context_processor

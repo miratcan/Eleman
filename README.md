@@ -44,10 +44,10 @@ Install Python packages to that environment:
     $ source venv/bin/activate
     $ pip install -r requirements.txt
     
-Run synch command, you must set AIRTABLE_BASE_KEY and AIRTABLE_API_KEY
+Run synch command, you must set AIRTABLE_BASE_ID and AIRTABLE_API_KEY
 environment variables when running.
 
-    $ AIRTABLE_BASE_KEY=foo AIRTABLE_API_KEY=bar flask synch
+    $ AIRTABLE_BASE_ID=foo AIRTABLE_API_KEY=bar flask synch
 
 After that you can run project:
 

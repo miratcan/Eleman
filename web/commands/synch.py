@@ -243,8 +243,8 @@ def create_job_tag(job_tag_values, db, cr):
     return cr.lastrowid
 
 
-def set_company_records_on_db(airtable_base_key, airtable_api_key, db, cr):
-    airtable = Airtable(airtable_base_key, 'Companies', airtable_api_key)
+def set_company_records_on_db(airtable_base_id, airtable_api_key, db, cr):
+    airtable = Airtable(airtable_base_id, 'Companies', airtable_api_key)
     airtable_keys_on_table = get_list_from_table('companies',
                                                  'airtable_key', db, cr)
     company_records_on_airtable = airtable.get_all()
@@ -265,8 +265,8 @@ def set_company_records_on_db(airtable_base_key, airtable_api_key, db, cr):
         logging.info('deleted company: ' + company_record['id'])
 
 
-def set_tag_records_on_db(airtable_base_key, airtable_api_key, db, cr):
-    airtable = Airtable(airtable_base_key, 'Tags', airtable_api_key)
+def set_tag_records_on_db(airtable_base_id, airtable_api_key, db, cr):
+    airtable = Airtable(airtable_base_id, 'Tags', airtable_api_key)
     airtable_keys_on_table = get_list_from_table(
         'tags', 'airtable_key', db, cr)
     tag_records_on_airtable = airtable.get_all()
@@ -313,8 +313,8 @@ def set_job_tag_records_on_db(job_tags_values_list, db, cr):
         logging.info(f'Num of deleted job tags from DB {cr.rowcount}')
 
 
-def set_job_records_on_db(airtable_base_key, airtable_api_key, db, cr):
-    airtable = Airtable(airtable_base_key, 'Jobs', airtable_api_key)
+def set_job_records_on_db(airtable_base_id, airtable_api_key, db, cr):
+    airtable = Airtable(airtable_base_id, 'Jobs', airtable_api_key)
     airtable_keys_on_table = get_list_from_table(
         'jobs', 'airtable_key', db, cr)
     job_records_on_airtable = airtable.get_all()
@@ -342,11 +342,11 @@ def set_job_records_on_db(airtable_base_key, airtable_api_key, db, cr):
     return job_tags_values
 
 
-def synch_db_from_airtable(airtable_base_key, airtable_api_key, db, cr):
+def synch_db_from_airtable(airtable_base_id, airtable_api_key, db, cr):
     create_tables(db, cr)
-    set_company_records_on_db(airtable_base_key, airtable_api_key, db, cr)
-    set_tag_records_on_db(airtable_base_key, airtable_api_key, db, cr)
+    set_company_records_on_db(airtable_base_id, airtable_api_key, db, cr)
+    set_tag_records_on_db(airtable_base_id, airtable_api_key, db, cr)
     job_tags_values_list = set_job_records_on_db(
-        airtable_base_key, airtable_api_key, db, cr
+        airtable_base_id, airtable_api_key, db, cr
     )
     set_job_tag_records_on_db(job_tags_values_list, db, cr)
