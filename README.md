@@ -24,7 +24,7 @@ Check the document: [Eleman Docker Container Tutorial: How To Set Up & Configure
 
 # How to Contribute?
  
- I appreciate all kinds of help for this project. Please check issues section
+ I appreciate all kinds of help for this project. 
  and 
   
 ## How to build docker image?
